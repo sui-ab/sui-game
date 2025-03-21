@@ -27,8 +27,6 @@ export default defineConfig({
         }),
     ],
     resolve: {
-        alias: {
-            "~shared": import.meta.resolve("../../../shared"),
-        },
+        alias: {},
     },
 });

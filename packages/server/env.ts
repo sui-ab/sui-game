@@ -1,5 +1,7 @@
 const envKeys = [
     "DB_FILE_NAME",
+    "PRIVY_APP_ID",
+    "WS_PORT"
 ] as const;
 
 type ENV = Record<typeof envKeys[number], string>;

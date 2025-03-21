@@ -1,14 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import Layout from "./layouts";
 import Home from "./pages/Home";
+import Game from "./Game";
 
 export default function () {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout.Default />}>
-          <Route index element={<Home />} />
-        </Route>
+        <Route index element={<Game />} />
       </Routes>
     </BrowserRouter>
   );
